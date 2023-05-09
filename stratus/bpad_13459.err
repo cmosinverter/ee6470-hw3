@@ -1,0 +1,97 @@
+Operating system: Linux
+                  0.0.0 Linux 3.10.0-1160.81.1.el7.x86_64 #1 SMP Fri Dec 16 17:29:43 UTC 2022 x86_64
+CPU: amd64
+     family 6 model 106 stepping 6
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0x2b1b62e5c406
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libcbreakpad.so + 0x36406
+    rax = 0x0000000000000000   rdx = 0x0000000000000000
+    rcx = 0x00002b1b62e5acb2   rbx = 0x00002b1b6390ce30
+    rsi = 0x0000000000000001   rdi = 0x00002b1b6390c7b8
+    rbp = 0x00002b1b6390cd70   rsp = 0x00002b1b6390c720
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000000000000   r11 = 0x0000000000000000
+    r12 = 0x0000000000000000   r13 = 0x00002b1b6390d198
+    r14 = 0x00002b1b6390cdb0   r15 = 0x00002b1b768ed316
+    rip = 0x00002b1b62e5c406
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x34672
+    rbp = 0x00002b1b6390cec0   rsp = 0x00002b1b6390cd80
+    rip = 0x00002b1b62e5a672
+    Found by: previous frame's frame pointer
+ 2  xmsim + 0x696630
+    rbp = 0x00002b1b6390cec0   rsp = 0x00002b1b6390ce18
+    rip = 0x0000000000a96630
+    Found by: stack scanning
+ 3  xmsim + 0x14e1f36
+    rsp = 0x00002b1b6390ced0   rip = 0x00000000018e1f36
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x02ef9fff  xmsim  ???  (main)  (WARNING: No symbols, xmsim, BA1589BEC95F518C43F9346AFBBBF4070)
+0x2b1b62112000 - 0x2b1b62133fff  ld-2.17.so  ???
+0x2b1b62137000 - 0x2b1b6230dfff  libstdc++.so.6.0.28  ???
+0x2b1b62311000 - 0x2b1b6232afff  libgcc_s.so.1  ???
+0x2b1b62333000 - 0x2b1b62334fff  ld-2.17.so  ???
+0x2b1b62336000 - 0x2b1b6234cfff  libpthread-2.17.so  ???
+0x2b1b6234d000 - 0x2b1b6254dfff  libpthread-2.17.so  ???
+0x2b1b62552000 - 0x2b1b62553fff  libdl-2.17.so  ???
+0x2b1b62554000 - 0x2b1b62755fff  libdl-2.17.so  ???
+0x2b1b62756000 - 0x2b1b62856fff  libm-2.17.so  ???
+0x2b1b62857000 - 0x2b1b62a57fff  libm-2.17.so  ???
+0x2b1b62a58000 - 0x2b1b62c1bfff  libc-2.17.so  ???
+0x2b1b62c1c000 - 0x2b1b62e20fff  libc-2.17.so  ???
+0x2b1b62e26000 - 0x2b1b62e8afff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 63B86735150D8CAFFEA2339F8607BB350)
+0x2b1b62e8b000 - 0x2b1b62e8ffff  libcbreakpad.so  ???
+0x2b1b62e97000 - 0x2b1b62f2ffff  libxmjudy.so.1.0.3  ???
+0x2b1b62fb1000 - 0x2b1b62fbcfff  libnss_files-2.17.so  ???
+0x2b1b62fbd000 - 0x2b1b631bdfff  libnss_files-2.17.so  ???
+0x2b1b631c4000 - 0x2b1b631cefff  libnss_nis-2.17.so  ???
+0x2b1b631cf000 - 0x2b1b633cffff  libnss_nis-2.17.so  ???
+0x2b1b633d0000 - 0x2b1b633e6fff  libnsl-2.17.so  ???
+0x2b1b633e7000 - 0x2b1b635e7fff  libnsl-2.17.so  ???
+0x2b1b635ea000 - 0x2b1b6369cfff  libdcapi.so  ???
+0x2b1b6369d000 - 0x2b1b636a9fff  libdcapi.so  ???
+0x2b1b636ab000 - 0x2b1b6385efff  libStrapNC.so  ???
+0x2b1b6386a000 - 0x2b1b6388dfff  libml_uvm.so  ???
+0x2b1b6388e000 - 0x2b1b6389dfff  ncvlog_ssl.so  ???
+0x2b1b64791000 - 0x2b1b64798fff  libcrypt-2.17.so  ???
+0x2b1b64799000 - 0x2b1b64999fff  libcrypt-2.17.so  ???
+0x2b1b649c8000 - 0x2b1b649c9fff  libfreebl3.so  ???
+0x2b1b649ca000 - 0x2b1b64bcafff  libfreebl3.so  ???
+0x2b1b64d90000 - 0x2b1b64d98fff  libxdt.so  ???
+0x2b1b64fb2000 - 0x2b1b65fa2fff  libbdw_st.so  ???
+0x2b1b66003000 - 0x2b1b666fcfff  libnffr.so  ???
+0x2b1b666fd000 - 0x2b1b66924fff  libnffr.so  ???
+0x2b1b673cd000 - 0x2b1b675defff  libnsys.so  ???
+0x2b1b675df000 - 0x2b1b677ebfff  libnsys.so  ???
+0x2b1b677fe000 - 0x2b1b67818fff  libz_sh.so  ???
+0x2b1b67819000 - 0x2b1b6781ffff  librt-2.17.so  ???
+0x2b1b67820000 - 0x2b1b67a20fff  librt-2.17.so  ???
+0x2b1b67a21000 - 0x2b1b67a40fff  libcdsCommon_sh.so  ???
+0x2b1b67b46000 - 0x2b1b67cbbfff  libhub.so  ???
+0x2b1b67dc9000 - 0x2b1b6810bfff  libcynshell2.0.so  ???
+0x2b1b6810c000 - 0x2b1b697a7fff  libstratus_hls.so  ???
+0x2b1b697a8000 - 0x2b1b69829fff  libstratus_hls.so  ???
+0x2b1b6bf0a000 - 0x2b1b6d0eafff  libz3.so  ???
+0x2b1b6d0eb000 - 0x2b1b6d316fff  libz3.so  ???
+0x2b1b6d319000 - 0x2b1b6d350fff  libgomp.so.1.0.0  ???
+0x2b1b75352000 - 0x2b1b7536ffff  libitcl3.4.so  ???
+0x2b1b76885000 - 0x2b1b76946fff  sim_V_PIPELINE.so  ???
+0x2b1b76948000 - 0x2b1b76be9fff  libscv-2.0.1.so  ???
+0x2b1b76bf1000 - 0x2b1b76dd3fff  libsystemc-2.3.3.so  ???
+0x7ffd36ff2000 - 0x7ffd36ff3fff  linux-gate.so  ???
+
+******BACKTRACE*****
+vserror (xmsim) [0x18e1f36]
+serror (xmsim) [0x18e3a95]
+sv_seghandler_aux (xmsim) [0xb47314]
+sv_seghandler (xmsim) [0xb4791d]
+******BACKTRACE END*****

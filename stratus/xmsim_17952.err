@@ -1,0 +1,66 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /home/m111/m111061617/ee6470/stratus/sobel_stratus/stratus/bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/ws36_17952/xmsim.args
+        +BDW_VLOG_DUMPFILE+
+        +hubSetOption+libdef=bdw_work/sims/V_BASIC/sim_V_BASIC.so,argv=../lena_color_256_noise.bmp%out.bmp
+        +hubSetOption+bdr=bdw_work/sims/V_BASIC/sim.bdr
+        +xm64bit
+        +incdir+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib
+        +incdir+bdw_work/wrappers
+        +access+rw
+        +loadpli1=/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+        +xminput+bdw_work/sims/V_BASIC/ncverilog.do
+        +xmlibdirname+bdw_work/sims/V_BASIC
+        +libext+.v
+        +define+ioConfig
+        +define+BDW_RTL_SobelFilter_BASIC
+        +nowarn+LIBNOU
+        -amsdlibdir bdw_work/sims/V_BASIC/AMSD
+        -INPUT bdw_work/sims/V_BASIC/ncverilog.do
+        -NOWARN LIBNOU
+        -MESSAGES
+        +EMGRLOG bdw_work/sims/V_BASIC/bdw_sim_verilog.log
+        -XLSTIME 1683296947
+        -XLKEEP
+        -XLMODE bdw_work/sims/V_BASIC/run.lnx8664.22.03.d
+        -RUNMODE
+        -CDSLIB bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/cds.lib
+        -HDLVAR bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	22.03-s003
+        -XLNAME ./bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/ws36_17952
+    -CHECK_VERSION TOOL:	xrun(64)	22.03-s003
+    -LOG_FD 4
+    -LOG_FD_NAME bdw_work/sims/V_BASIC/bdw_sim_verilog.log
+    -cmdnopsim
+    -runlock /home/m111/m111061617/ee6470/stratus/sobel_stratus/stratus/bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/.xmlib.lock
+    -runscratch /home/m111/m111061617/ee6470/stratus/sobel_stratus/stratus/bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/ws36_17952
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 772805 NS + 1
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	22.03-s003
+  HOSTNAME: ws36
+  OPERATING SYSTEM: Linux 3.10.0-1160.76.1.el7.x86_64 #1 SMP Wed Aug 10 16:21:17 UTC 2022 x86_64
+  MESSAGE: rts_abrthandler - SIGABRT unexpected violation pc=0x2ab6e6184387 addr=0x849f00004620
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65500
+External Code in function: <unavailable> offset -65513
+External Code in function: <unavailable> offset -65536
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.top:v (SSS)
+External Code in function: <unavailable> offset -65535
+External Code in function: <unavailable> offset -65533
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot worklib.top:v (SSS)
+Intermediate File: string (IF_STRING) in snapshot worklib.top:v (SSS)
+	Decompile: /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl
+Simulator Snap Shot: dynlib (SSS_DYNLIB) in snapshot worklib.top:v (SSS)
+External Code in function: <unavailable> offset -65420
+External Code in function: <unavailable> offset -61440
+External Code in function: <unavailable> offset -54416
+csi-xmsim - CSI: investigation complete took 0.030 secs, send this file to Cadence Support

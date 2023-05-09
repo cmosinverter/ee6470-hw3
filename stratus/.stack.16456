@@ -1,0 +1,53 @@
+[New LWP 16457]
+[New LWP 16635]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+0x00002ae7badbd659 in waitpid () from /usr/lib64/libc.so.6
+#0  0x00002ae7badbd659 in waitpid () from /usr/lib64/libc.so.6
+#1  0x00002ae7bad3af62 in do_system () from /usr/lib64/libc.so.6
+#2  0x00002ae7bad3b311 in system () from /usr/lib64/libc.so.6
+#3  0x00002ae7bf861d99 in dumpStack () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools/stratus/lib/64bit/libbdw_st.so
+#4  0x00002ae7bf748866 in msgAbortChk () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools/stratus/lib/64bit/libbdw_st.so
+#5  0x00002ae7bf747f10 in vmsgLim(MsgId, MsgLimVal const&, __va_list_tag*) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools/stratus/lib/64bit/libbdw_st.so
+#6  0x00002ae7bf747fb7 in msg () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools/stratus/lib/64bit/libbdw_st.so
+#7  0x00002ae7bf5c43a0 in alloc_failure () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools/stratus/lib/64bit/libbdw_st.so
+#8  0x00002ae7bf5c4502 in realloc_chk () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools/stratus/lib/64bit/libbdw_st.so
+#9  0x00002ae7bc7aab51 in astallc () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#10 0x00002ae7bc6f4820 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#11 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#12 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#13 0x00002ae7bc6f4919 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#14 0x00002ae7bc6f4919 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#15 0x00002ae7bc6f54ce in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#16 0x00002ae7bc6f9665 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#17 0x00002ae7bc6f4919 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#18 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#19 0x00002ae7bc6f4919 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+$1 = 0
+$2 = 0
+#29 0x00002ae7bc6f4919 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#30 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#31 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#32 0x00002ae7bc6f4919 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#33 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#34 0x00002ae7bc6f48f4 in astcopy () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#35 0x00002ae7bb95aeb1 in cdfg_copy_expr_nodf(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#36 0x00002ae7bb945cfc in remove_serial_case_nodes(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#37 0x00002ae7bb9458db in remove_serial_case_nodes(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#38 0x00002ae7bb9457fa in remove_serial_case_nodes(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#39 0x00002ae7bb9458fe in remove_serial_case_nodes(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#40 0x00002ae7bb9465cf in ControlBuilder::remove_serial_cases(ControlBuilder*, int, int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#41 0x00002ae7bba6258d in ControlBuilder::process_one_driver_for_sym(int, int, int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#42 0x00002ae7bba7a906 in exp_build_controller(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#43 0x00002ae7bb9bae3e in CynthEpilog(int&, int&, int&) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#44 0x00002ae7bb9a1a64 in CynthII(int) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#45 0x00002ae7bb9a1f36 in CynthIIExceptionWrapper () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#46 0x00002ae7bbf7c985 in back_end() () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#47 0x00002ae7bbf8d713 in edg_main(int, char**) () from /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+#48 0x00000000004011e7 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 16456] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (process 16456) detached]

@@ -1,0 +1,15 @@
+/usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/inca/bin/64bit/xmsim
+Obtained 13 stack frames.
+/usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/inca/bin/64bit/../../../lib/64bit/libcbreakpad.so(_Z13use_backtracev+0x9d) [0x2b75dd54b1a3]
+/usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/inca/bin/64bit/../../../lib/64bit/libcbreakpad.so(cbpad_generate_dump_on_demand+0x66) [0x2b75dd54b630]
+xmsim() [0x18e3457]
+xmsim(serror+0x95) [0x18e3a95]
+xmsim() [0xb473a1]
+xmsim() [0xb4791d]
+/usr/lib64/libpthread.so.0(+0xf630) [0x2b75dca36630]
+/usr/lib64/libc.so.6(+0x1566a6) [0x2b75dd29f6a6]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so(_ZN16CExecutableImage17initLinkLibrariesERK10LibsToLoadiP11CElaborator+0x2ee) [0x2b75e230b38e]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so(_ZN15CResultsManager11postExecuteEv+0x4f) [0x2b75e22e9b9f]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so(_ZN10CSLProgram12endExecutionEv+0x12) [0x2b75e22d2d92]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so(cpliTerminate+0xac) [0x2b75e22f105c]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl.so(sslShutdown+0x27) [0x2b75ddf872a7]

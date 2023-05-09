@@ -1,0 +1,14 @@
+/usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/inca/bin/64bit/xmsim
+Obtained 12 stack frames.
+/usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/inca/bin/64bit/../../../lib/64bit/libcbreakpad.so(_Z13use_backtracev+0x9d) [0x2b46ef38e1a3]
+/usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/inca/bin/64bit/../../../lib/64bit/libcbreakpad.so(cbpad_generate_dump_on_demand+0x66) [0x2b46ef38e630]
+xmsim() [0x18e1f36]
+xmsim(serror+0x95) [0x18e3a95]
+xmsim() [0xb47314]
+xmsim() [0xb4791d]
+/usr/lib64/libpthread.so.0(+0xf630) [0x2b46ee879630]
+bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so(_ZN7sc_core7sc_timemIERKS0_+0x17) [0x2b4702dd3ad3]
+bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so(_ZN7sc_coremiERKNS_7sc_timeES2_+0x3a) [0x2b4702dd3b20]
+bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so(_ZN9Testbench12fetch_resultEv+0xf7) [0x2b4702dd342f]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/lib-linux64/libsystemc-2.3.3.so(_ZN7sc_core16sc_thread_cor_fnEPv+0x9b) [0x2b470317ceeb]
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/lib-linux64/libsystemc-2.3.3.so(qt_align+0) [0x2b470323f567]

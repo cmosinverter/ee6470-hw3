@@ -1,0 +1,44 @@
+*** Current stack trace:
+--> 0x2abb03ce4387 gsignal              + 37       /usr/lib64/libc.so.6
+--> 0x2abb03ce4387 gsignal              + 37       /usr/lib64/libc.so.6
+--> 0x2abb03ce5a78 abort                + 148      /usr/lib64/libc.so.6
+--> 0x2abb03427663 <don't know>         + 9a663    /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libstdc++.so.6
+--> 0x2abb03433096 <don't know>         + a6096    /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libstdc++.so.6
+--> 0x2abb03432199 <don't know>         + a5199    /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libstdc++.so.6
+--> 0x2abb03432ac4 __gxx_personality_v0 + 264      /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libstdc++.so.6
+--> 0x2abb035777c3 <don't know>         + 107c3    /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libgcc_s.so.1
+--> 0x2abb03577d01 _Unwind_RaiseException + 2a1      /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libgcc_s.so.1
+--> 0x2abb03433348 __cxa_throw          + 38       /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libstdc++.so.6
+--> 0x2abb06443541 <don't know>         + 2a0541   /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+--> 0x2abb065cb88a msgAbortChk          + 5a       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+--> 0x2abb0a53cda5 vatMsgLoc(void*, MsgId, MsgLimVal const&, int, __va_list_tag*) + 145      /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+--> 0x2abb0a53d5cf message(MsgId, int, ...)   + 9f       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libstratus_hls.so
+--> 0x2abb0359b630 <don't know>         + f630     /usr/lib64/libpthread.so.0
+--> 0x2abb03da6e27 syscall              + 17       /usr/lib64/libc.so.6
+--> 0x2abb03433564 __cxa_guard_acquire  + a4       /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libstdc++.so.6
+--> 0x2abb040b0623 cbpad_generate_dump_on_demand + 59       /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools.lnx86/lib/64bit/libcbreakpad.so
+--> 0x18e3457 <don't know>         + 14e3457 
+--> 0x18e3a95 serror               + 95      
+--> 0xb478c6  <don't know>         + 7478c6  
+--> 0x2abb0359b630 <don't know>         + f630     /usr/lib64/libpthread.so.0
+--> 0x2abb03ce4387 gsignal              + 37       /usr/lib64/libc.so.6
+--> 0x2abb03ce5a78 abort                + 148      /usr/lib64/libc.so.6
+--> 0x2abb03d26f67 <don't know>         + 78f67    /usr/lib64/libc.so.6
+--> 0x2abb03d2f329 <don't know>         + 81329    /usr/lib64/libc.so.6
+--> 0x2abb17b0b3fc __gnu_cxx::new_allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::deallocate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, unsigned long) + 20       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb17b0a728 std::allocator_traits<std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::deallocate(std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, unsigned long) + 2b       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb17b088ba std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_deallocate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, unsigned long) + 32       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb17b06cf0 std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base() + 3e       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb17b06d41 std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector() + 41       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb17b0d032 bdw_wrapper_checker::~bdw_wrapper_checker() + 46       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb03ce7ce9 <don't know>         + 39ce9    /usr/lib64/libc.so.6
+--> 0x2abb03ce7d37 <don't know>         + 39d37    /usr/lib64/libc.so.6
+--> 0x2abb17adeed6 esc_report_error(int, char const*, ...) + 185      ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb17b0030e esc_hub::static_domain_exec_cb(unsigned long, void*, qbhDomainExecActivity, double, double*) + 92       ./bdw_work/sims/V_PIPELINE/sim_V_PIPELINE.so
+--> 0x2abb08de4acd CHubExecDomain::execNow(double) + 3d       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so
+--> 0x2abb08de545f CHub::execAllNow(double) + 4f       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so
+--> 0x2abb08de56c9 CHub::execute()   + 49       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so
+--> 0x2abb08de9b84 CResultsManager::postExecute() + 34       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so
+--> 0x2abb08dd2d92 CSLProgram::endExecution() + 12       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so
+--> 0x2abb08df105c cpliTerminate        + ac       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/libhub.so
+--> 0x2abb04aec2a7 sslShutdown          + 27       /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl.so
